@@ -5,45 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="nhapvao1">
-<input type="text" id="nhapvao2"> <br>
-
-<button onclick="cong()" >Additions(+)</button>
-<button onclick="tru() ">Subtraction(-)</button>
-<button onclick="nhan()" >Multiplication(*)</button>
-<button onclick="chia()" >Division(/)</button>
+<input type="text" id="dauvao">
+<select name="" id="to">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name="" id="from">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="lamgido()">Convert</button>
 <script>
-    function cong() {
-        let a = +document.getElementById('nhapvao1').value;
-        let b = +document.getElementById('nhapvao2').value;
-        let c = a + b;
-        alert(c);
+function    lamgido(){
+    let giatrivao = document.getElementById('dauvao').value;
+    let to = document.getElementById('to').value;
+    let from = document.getElementById('from').value;
+    if (to == from) {
+        alert(giatrivao);
     }
-</script>
-<script>
-    function tru() {
-        let a = document.getElementById('nhapvao1').value;
-        let b = document.getElementById('nhapvao2').value;
-        let c = a - b;
-        alert(c);
+    if (to == "a" && from == "b") {
+        alert(giatrivao/24000)
+    }if (to == "b" && from == "a") {
+        alert(giatrivao*24000)
     }
-</script>
-<script>
-    function nhan() {
-        let a = document.getElementById('nhapvao1').value;
-        let b = document.getElementById('nhapvao2').value;
-        let c = a * b;
-        alert(c);
-    }
-</script>
-<script>
-    function chia() {
-        let a = document.getElementById('nhapvao1').value;
-        let b = document.getElementById('nhapvao2').value;
-        let c = a / b;
-        alert(c);
-    }
+}
 </script>
 
-    </body>
+</body>
 </html>
