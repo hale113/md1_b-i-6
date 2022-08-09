@@ -5,53 +5,73 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="ip1">
+<input type="text" id="ip2">
+<button onclick="hv()">ấn</button>
+<h1 id="res"> </h1>
 <script>
-  // bài 1 câu lệnh tên là
-alert("le ha")
-  //bài 2
+  // bài 1 câu lệnh để hiển thị hộp thoại
+//alert("le ha")
+  //bài 2 câu lệnh nhận một gói giá trị từ hộp thoại
 //let a = prompt('nhap so')
   //alert( a*a)
   //bài 3
-//let a
-  //bai4
+  //function show() {
 
-     //a.chu vi va dien tich hinh vuong
+   // let a = document.getElementById('id1').value;
+    //let b = document.getElementById('id2').value;
+    //document.getElementById('res').innerHTML = a * b
+//}
 
-
-  let a = prompt('nhap vao a');
-  let area =  a * a;
-  let chuvi = 4 * a;
-  document.getElementById('res').innerHTML = "chu vi là" + dt
+  //cau 4
+  //a.
+  function hv () {
+      let area = a * a;
+      let chuvi = 4 * a;
+      document.getElementById('res').innerHTML = "chu vi là" + cv + ",diện tích là:" + dt
+  }
      //b.tinh binh phuong
-  let a = +prompt('nhap a');
-  let binhphuonga = a*b;
-    alert(binhphuonga)
-  let b = +prompt('nhap b');
-  let binhphuongb = b*b;
-    alert(binhphuongb)
-     //c,tinh tong cac so
-  let a = +prompt('a');
-  let b = +prompt('b');
-  let tong = a + b
-   alert(tong)
-     //d.in ra the ki
-  let a = prompt('nam')
+  function ab() {
+      let a = document.getElementById('ip1').value;
+      let b = document.getElementById('ip2').value;
+      let mu2 =a*a;
+      let mub = Math.pow(a,b);
+      document.getElementById('res').innerHTML = "a mũ 2 là :" + mu2 +",a mu b là" + mub
+  }
+//c.tinh tong
+  function tongAdenB(){
+      let a = +document.getElementById('ip1').value;
+      let b = +document.getElementById('ip2').value;
+      let tong = (a+b)*(b-a+1)
+      document.getElementById('res').innerHTML = "tổng là:"+tong;
+  }
+  //d.nhap nam in ra thế kỉ
+  function tinhtheky(){
+      let a = +document.getElementById('ip1').value;
+      let theky = Math.floor(a/100)+1
+      document.getElementById('res').innerHTML = "thế kỉ là " + theky;
+
+  }
 
      //e.kiem tra tam giac
-  let a = prompt('a')
-  let b = prompt('b')
-  let c = prompt('c')
-  if (a+b>c && a+c>b && b+c>a) {
-      alert('đây là ba cạnh của tam giác');
-  }
-  if (a==b && b==c) {
-      alert('đây là tam giác đều ');
-  }
-  if (a==b||b==c||c==a) {
-      alert('đây là tam giác cân');
-  }
-  if (a*a + b*b == c*c || b*b +c*c == a*a||a*a +c*c == b*b) {
-      alert('đây là tam giác vuông ');
+//body
+  //<input type="text" id="ip1">
+  //<input type="text" id="ip2">
+  //<input type="text" id="ip3">
+  function tamgiac() {
+      let a = +document.getElementById('ip1').value;
+      let b = +document.getElementById('ip2').value;
+      let c = +document.getElementById('ip3').value;
+      if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a) {
+          document.getElementById('res').innerHTML = 'a,b,c là ba cạnh của một tam giác';
+          }if (a == b && b == c) {
+               document.getElementById('res').innerHTML = 'a,b,c là ba cạnh của tam giác đều ';
+          }if (a === b || b ===c || c === a) {
+               document.getElementById('res').innerHTML = 'a,b,c là  ba cạnh của tam giác cân';
+          }if (a*a +b*b == c*c||
+               document.getElementById('res').innerHTML = 'a,b,c là ba cạnh của tam giác vuông ';
+       } else
+                document.getElementById('res').innerHTML = 'không phải tam giác'
   }
 </script>
 </body>
