@@ -6,19 +6,23 @@
 </head>
 <body>
 <script>
-  let so = prompt("nhập vào số :");
-  let laSNT = true;
-  for ( let i = 2 ; i < so; i++ ){
-    if (so%i==0){
-      laSNT = false;
-      break;
-    }
+  let dem = 0;
+  let so = 2;
+  while (dem<20){
+      let laSNT = true;
+      for ( let i = 2 ; i < so; i++ ){
+          if (so%i==0){
+              laSNT = false;
+              break;
+          }
+      }
+      if( laSNT){
+          document.write(so + "  ");
+          dem++;
+      }
+      so++;
   }
-  if( laSNT){
-    alert(so+ ' là số nguyên tố')
-  } else {
-    alert(so+ ' không phải là số nguyên tố')
-  }
+
 </script>
 </body>
 </html>
