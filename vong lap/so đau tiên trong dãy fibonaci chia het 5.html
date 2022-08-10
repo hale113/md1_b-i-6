@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let st1 = 1
+  let st2 = 2
+  while (st1 % 5 != 0){
+    let c = st2;
+    st2 = st1 + st2;
+    st1 = c;
+    console.log(st1)
+  }
+  document.write(st1)
+</script>
+
+</body>
+</html>
