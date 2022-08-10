@@ -7,14 +7,18 @@
 <body>
 <script>
   let so = prompt("nhập vào số :");
-  let laSNT = "là số nguyên tố"
+  let laSNT = true;
   for ( let i = 2 ; i < so; i++ ){
     if (so%i==0){
-      laSNT = "không phải số nguyên tố";
+      laSNT = false;
       break;
     }
   }
-  alert( laSNT)
+  if( laSNT){
+    alert(so+ ' là số nguyên tố')
+  } else {
+    alert(so+ ' không phải là số nguyên tố')
+  }
 </script>
 </body>
 </html>
