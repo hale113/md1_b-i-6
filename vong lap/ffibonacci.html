@@ -9,13 +9,16 @@
     let dem = 2;
     let st1 = 1;
     let st2 = 2;
+    let sum = 0;
     while ( dem <= 20){
         let c = st2;
         st2 = st1 + st2 ;
        st1 = c ;
         console.log(st1);
        dem=dem +1;
+       sum = sum + st1
     }
+    document.write( "tổng là " + sum)
 </script>
 </body>
 </html>
