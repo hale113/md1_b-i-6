@@ -7,14 +7,18 @@
 <body>
 
 <script>
-    let a;
-    a = "<table border='1' width='300' cellspacing='0' celpadding='3'>"
-    for ( i = 1 ; i <= 10 ; i++){
-       a = a + "<tr>";
-       for ( j = 1 ; j <= 10 ; j++){
-           a = a + "<td>" + i * j + "</td>";
-       }
-       a = a + "</tr>";
+    let a,i,j;
+    a = "<table border='1' width='300' cellspacing='0' celpadding='3'>";
+    i=j=1;
+    while (i <= 10){
+        a =a + "<tr>";
+        while (j<=10){
+            a =a + "<td>" + i*j + "</td>";
+            j++;
+        }
+        a = a +"</tr>";
+        j =1;
+        i++
     }
     a = a + "</table>";
     document.write(a);
