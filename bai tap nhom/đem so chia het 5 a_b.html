@@ -5,16 +5,36 @@
     <title>Title</title>
 </head>
 <body>
+<!--<input type="text" name="" id="ip1" placeholder="nhập a">-->
+<!--<input type="text" name="" id="ip2" placeholder="nhập b">-->
+<!--<button onclick="nhan()">nhấn đi</button>-->
+<!--<p id="out"></p>-->
 <script>
-  let a= prompt()
-  let b= prompt()
-  let dem=0
-  for (a;a<=b;a++){
-    if (a%5==0){
-      console.log(a)
-      dem++
-    }
-  }document.write(dem)
+   let a= +prompt('nhập a')
+   let b= +prompt('nhập b')
+   let dem=0;
+   for (a;a<=b;a++){
+     if (a%5==0){
+         console.log(a)
+         dem += 1
+     }
+   }
+   document.write(dem)
+  // function nhan() {
+  //     let a = document.getElementById('ip1').value;
+  //     let b = document.getElementById('ip2').value;
+  //     let i;
+  //     let dem =0;
+  //     for (i = a; i <= b; i++) {
+  //         if (i % 5 == 0) {
+  //             console.log(i)
+  //             dem++;
+  //             // document.getElementById('out').innerHTML += i + '<br>'(nếu muốn in ra i)
+  //         }
+  //     }
+  // }
+  // document.getElementById('out').innerHTML= dem
+
 </script>
 
 </body>

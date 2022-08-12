@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>in các số chia hết cho 3</title>
 </head>
 <body>
+<input type="text"id="ip1"placeholder="nhap a">
+<input type="text"id="ip2"placeholder="nhap b">
+<button onclick="nhap()">Nhấn đi</button>
+<p id='abc'>kết quả là: <br></p>
 <script>
+    //c1
   // let a =prompt()
   // let b =prompt()
   // for ( a;a<= b;a++){
@@ -13,13 +18,28 @@
   //     document.write(a)
   //   }
   // }
-  let a =prompt()
-  let b =prompt()
-  for ( a;a<= b;a++){
-      if (a%3==0){
-          alert(a)
+    //c2
+  // let a =+prompt("nhập a")
+  // let b =+prompt("nhập b")
+  // for ( a;a<= b;a++){
+  //     if (a%3==0){
+  //         alert(a);
+  //     }
+  // }
+    function nhap(){
+      let a = document.getElementById('ip1').value
+      let b = document.getElementById('ip2').value
+      let i;
+      for ( i=a;i<= b;i++){
+          if (i %3==0){
+              document.getElementById('abc').innerHTML += i +'<br>'
+
+          }
+
       }
-  }
+
+
+    }
 
 </script>
 </body>
