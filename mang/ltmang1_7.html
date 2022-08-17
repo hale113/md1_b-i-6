@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra phần tử có thuộc mảng không</title>
+</head>
+<body>
+<script>
+ let dem = 0;
+ let cc = [];
+  for(let i=0;i<10; i++){
+    let a = +prompt("nhập vào các phần tử thứ: " + i);
+    cc.push(a);
+  }
+  let v =+prompt("nnập vào số cần xóa!");
+  let viTri = cc.indexOf(v);
+  if (viTri == -1){
+      alert("không có!")
+  }else {
+      cc.splice(viTri,1);
+      cc.push(0);
+      console.log(cc)
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm kí tự trong mảng và thay thế</title>
+</head>
+<body>
+<script>
+  let cc=['-',1,2,'-',5]
+  for (let i=0; i< cc.length;i++){
+      if (cc[i]=='-'){
+          cc[i]='_'
+      }
+  }
+  alert(cc);
+  //cách 2
+  let bb = "hoa-huọng--duong-";
+  alert(bb.split('-').join('_'));
+</script>
+</body>
+</html>

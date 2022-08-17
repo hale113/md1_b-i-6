@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nối 2 mảng thành 1 mảng và hiển thị</title>
+</head>
+<body>
+<script>
+  let a = [];
+  let b = [];
+  let c = [];
+  for (let i=0;i<2;i++){
+      let aa = +prompt("nhập phần tử mảng a " + i);
+      a.push(aa);
+      // c.push(aa);
+      let bb = +prompt('nhập phần tử mảng b' +i);
+      b.push(bb);
+      // c.push(bb);
+  }
+  c.push(a.concat(b));
+  // c = a.concat(b);
+  console.log(c)
+
+
+</script>
+</body>
+</html>

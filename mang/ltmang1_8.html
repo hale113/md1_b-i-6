@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sắp xếp </title>
+</head>
+<body>
+<script>
+  let cc= [];
+  for (let i = 0; i<10; i++){
+    let a = +prompt("nhập vào phần tử thứ "+ i);
+    cc.push(a);
+  }
+  for (let i=0; i<cc.length; i++){
+      for (let j=i+1; j<cc.length;j++){
+          if (cc[i]<cc[j]){
+              let ccc = cc[i];
+              cc[i] = cc[j];
+              cc[j] = ccc;
+          }
+      }
+  }
+  console.log(cc)
+  document.write(cc)
+</script>
+</body>
+</html>

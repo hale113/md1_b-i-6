@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 2, 3],
+        [6, 7, 8]
+    ]
+    let sum = 0
+    let tich = 1;
+    let dem = 0
+    
+    for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+           if (arr[i][j]%5==1){
+               dem += 1;
+           }
+        }
+    }
+    document.write(dem)
+            //tinh tong tích
+            //sum = sum +arr[i][j]
+            //tich = tich * arr[i][j]
+            //document.write(arr[i][j] + " ")}
+        //document.write("<br>")
+    // }
+   // document.write(sum + '_'+ tich)
+ //đếm các phần tử chia hết cho 5
+
+
+</script>
+
+</body>
+</html>

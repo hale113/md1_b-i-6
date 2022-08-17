@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị giá trị max và vị trí</title>
+</head>
+<body>
+<script>
+    let cc = [];
+    for(let i=0;i<3; i++){
+        let a = +prompt("nhập vào các phần tử thứ: " + i);
+        cc.push(a);
+    }
+    let max = cc[0];
+    let vitri =0;
+    for (let x=0; x<cc.length;x++){
+        if (cc[x]>max) {
+            max = cc[x]
+            vitri = x
+        }
+    }
+    alert(max + 'vị trí là'+ vitri)
+
+
+
+</script>
+</body>
+</html>

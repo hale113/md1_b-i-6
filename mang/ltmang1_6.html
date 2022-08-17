@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" id="xx">-->
+<!--<button onclick="an()">ấn đi</button>-->
+<script>
+  //nhập cách 1
+   let cc =[];
+   for (let i=0; i<10; i++);{
+     let a = +prompt("nhập vào phần tử thứ " +i);
+     cc.push(a);
+   }
+   let v =+prompt("nhập vào phần tử cần kiểm tra")
+   let vitri = cc.indexOf(v);
+    if (vitri ==-1){
+        alert("v is not in the array")
+    }else {
+        alert("v is in the array")
+    }
+
+
+
+
+  //nhập cách 2
+  // let phantu = [];
+  // let ooo= document.getElementById('xx');
+  // function an(){
+  //     let bb = ooo.value;
+  //     phantu= bb.split('_');
+  //     document.write(phantu);
+  // }
+
+</script>
+</body>
+</html>
