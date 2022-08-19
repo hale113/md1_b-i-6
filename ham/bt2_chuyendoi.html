@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<!--//<p id="demo"></p>-->
+<script>
+  let a = prompt("nhập a");
+  let b = prompt("nhập b");
+function footToMeter(foot){
+  let meter = 0.305 * foot;
+  return meter;
+}
+function meterToFoot(meter){
+  let foot = 3.279 * meter;
+  return foot;
+}
+let meter = footToMeter(a);
+let foot = meterToFoot(b);
+ document.write(a + "foot bằng " + meter+ "meter"+"<br>" );
+
+ document.write(b + "meter bằng " + foot+ "foot" );
+ // alert(foot);
+ // nếu muốn in kết quả ra thẻ p
+  // document.getElementById('demo').innerHTML= ketqua
+</script>
+</body>
+</html>

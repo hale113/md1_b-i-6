@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm tính diện tích và tính cu vi hình tròn</title>
+</head>
+<body>
+<script>
+  function dientich(r){
+    let s;
+    s = r*r*3.14;
+    return s;
+  }
+   function chuvi(r){
+      let c;
+     c = 2 * r * 3.14;
+     return c
+   }
+  let b = prompt("nhập vào bán kính hình tròn");
+  // let dd = prompt("nhập vào đường kính hình tròn")
+  let s = dientich(b)
+  let c = chuvi(b)
+ document.write( "diện tích là: " + s +"<br>")
+ document.write("chu vi là: " +  c)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết hàm , tìm min</title>
+</head>
+<body>
+<script>
+    let cc = [];
+    for(let i=0;i<3; i++){
+        let a = +prompt("nhập vào các phần tử thứ: " + i);
+        cc.push(a);
+    }
+    function minArray(cc){
+        let min = cc[0];
+        for (let i=0; i<cc.length; i++){
+            if (cc[i]< min){
+                min = cc[i];
+            }
+        }
+        return min;
+    }
+    let min = minArray(cc)
+    alert(min)
+</script>
+</body>
+</html>
