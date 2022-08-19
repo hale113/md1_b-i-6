@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xây dựng lớp mô tả Temperture</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        tem;
+        constructor(c) {
+            this.tem = c;
+        }
+        Kavin() {
+            return this.tem + 273.15;
+        }
+        Fahrenheit() {
+            return this.tem * (9 / 5) + 32;
+        }
+    }
+    let a = new Temperature(25)
+    document.write("Nhiệt độ K là: " + a.Kavin()+ "<br>"+ 'Nhiệt độ F là: ' + a.Fahrenheit())
+</script>
+</body>
+</html>
